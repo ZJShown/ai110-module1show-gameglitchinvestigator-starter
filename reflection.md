@@ -14,9 +14,10 @@ Document at least 3 bugs you found. Add rows as needed.
 
 | Input | Expected Behavior | Actual Behavior | Console Output / Error |
 |-------|-------------------|-----------------|------------------------|
-| | | | |
-| | | | |
-| | | | |
+| Use all guesses until the game is out of attempts | The game should show that there are 0 attempts left, and the top comment should match the out-of-attempts warning and score. | The out-of-attempts warning appears with the score, but the top comment still says there is 1 attempt left. | No console error noticed. |
+| Enter a guess that is too low or too high | The hint should correctly say "Higher" when the guess is too low and "Lower" when the guess is too high. | The hint does not work properly and does not correctly show "Lower" or "Higher". | No console error noticed. |
+| Click the "New Game" button, then enter a number and guess again | The button should fully reset the game, including the target number, attempts, score/message state, and guessing behavior. | The button only resets the attempts. After entering a number and trying to guess, the game does not respond properly. | No console error noticed. |
+| Change the game difficulty | The game should adjust the number range to match the selected difficulty. | Changing the difficulty does not properly update the number range. | No console error noticed. |
 
 ---
 
