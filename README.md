@@ -25,21 +25,20 @@ It wrote the code, ran away, and now the game is unplayable.
 
 ## 📝 Document Your Experience
 
-- [ ] Describe the game's purpose.
-- [ ] Detail which bugs you found.
-- [ ] Explain what fixes you applied.
+- [x] The game is a Streamlit number guessing game where the player chooses a difficulty, guesses the secret number, and uses hints to move higher or lower.
+- [x] I found several bugs: the hints were backwards, the difficulty range did not update correctly, the attempts-left message was off by one, and the New Game button did not fully reset the game state.
+- [x] I fixed the app by moving difficulty and guess-checking logic into `logic_utils.py`, using the selected difficulty range when creating a secret number, correcting the higher/lower hint messages, starting attempts at 0, updating the attempts-left display after guesses, and making New Game reset the secret, attempts, score, status, history, and input box.
 
-## 📸 Demo Walkthrough
+## Demo Walkthrough
 
-Describe your fixed game in numbered steps so a reader can follow along without watching a video:
-
-1. <!-- Describe this step -->
-2. <!-- Describe this step -->
-3. <!-- Describe this step -->
-4. <!-- Describe this step -->
-5. <!-- Add more steps as needed -->
-
-**Screenshot** *(optional)*: <!-- Insert a screenshot of your fixed, winning game here -->
+1. User selects Normal difficulty, and the game shows the range as 1 to 100 with 8 attempts allowed.
+2. User enters a guess of 40 when the secret number is 50.
+3. Game returns "Higher" because the guess is too low, records the guess in history, and decreases the attempts left by 1.
+4. User enters a guess of 70.
+5. Game returns "Lower" because the guess is too high, updates the score, and decreases the attempts left again.
+6. User enters a guess of 50.
+7. Game returns "Correct!", shows the winning message with the final score, and changes the game status to won.
+8. User clicks New Game, and the app resets the secret number, score, attempts, status, history, and input box for a fresh round.
 
 ## 🧪 Test Results
 

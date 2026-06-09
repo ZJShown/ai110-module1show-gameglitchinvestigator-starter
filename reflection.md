@@ -51,3 +51,5 @@ It automatically runs the updated code in the background so you don't have do.
   - This could be a testing habit, a prompting strategy, or a way you used Git.
 - What is one thing you would do differently next time you work with AI on a coding task?
 - In one or two sentences, describe how this project changed the way you think about AI generated code.
+
+One strategy I would use in the future is probably fix one function at the time so I don't get everything mixed up. One thing I would do differently maybe is I would ask AI to explain the actions after it has done all the changes.
